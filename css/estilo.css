@@ -1,0 +1,64 @@
+html, body {
+ /* 18 */
+ margin: 0;
+ padding: 0;
+}
+
+#topo {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.514);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topo a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#topo a:hover {
+    color: gold;
+    border-bottom: 4px solid gold;
+    text-shadow: 1px 1px 2px orange;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100vh;
+    background-size: cover; /* tamanho */
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px black;
+    color: white; 
+}
+
+#div1 {
+    background-image: url("../img/nature-01.jpg");
+}
+
+#div2 {
+    background-image: url("../img/nature-02.jpg");
+}
+
+#div3 {
+    background-image: url("../img/nature-03.jpg");
+}
+
+#div4 {
+    background-image: url("../img/nature-04.jpg");
+}
+
+#div5 {
+    background-image: url("../img/nature-05.jpg");
+}
