@@ -1,26 +1,28 @@
-$(function() {
+$(function () {
     console.log("funcionando..");
 });
 
 var topo = $("#topo");
 
-$(window).scroll(function () {
-    if($(this).scrollTop() > 0) {
+var handleScroll = function () {
+    if ($(this).scrollTop() > 0) {
         topo.css("background-color", "rgba(0, 0, 0, 0.5)");
     } else {
         topo.css("background-color", "rgba(0, 0, 0, 1)");
     }
-});
+};
+
+// Execute a função handleScroll toda vez que o usuário rola a página
+$(window).scroll(handleScroll);
 
 $(".link").click(function (event) {
-    // Teste;
     var target = $(this.hash);
-    console.log(target);
 
     if (target.length) {
-        // Evitar que o link funcione!
+        // Impede o comportamento padrão do link
         event.preventDefault();
 
+        // Anima o scroll até a seção alvo
         $("html, body").animate({
             scrollTop: target.offset().top
         }, 3000);
